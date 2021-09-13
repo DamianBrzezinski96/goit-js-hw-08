@@ -8,4 +8,4 @@ var t=arguments[3];!function(){return function t(e,o,i){function n(a,r){if(!o[a]
 },{}],"TfQ5":[function(require,module,exports) {
 "use strict";var e=i(require("../../node_modules/simplelightbox/dist/simple-lightbox"));require("simplelightbox/dist/simple-lightbox.min.css");var l=require("./gallery-items");function i(e){return e&&e.__esModule?e:{default:e}}console.log(l.galleryItems);const t=e=>document.querySelector(e),o=e=>document.querySelectorAll(e),r=t(".gallery");console.log(r);const s=l.galleryItems.map(e=>`<a class = "gallery__item" href="${e.original}">\n            <img class="gallery__image" src="${e.preview}"  alt="${e.description}" title="${e.description}"/> \n            </a>`).join("");r.insertAdjacentHTML("afterbegin",s),console.log(s);let a=new SimpleLightbox(".gallery a",{captionsData:"alt",captionDelay:250});console.log(a);
 },{"../../node_modules/simplelightbox/dist/simple-lightbox":"J9Xu","simplelightbox/dist/simple-lightbox.min.css":"kz9M","./gallery-items":"q5Rn"}]},{},["TfQ5"], null)
-//# sourceMappingURL=/parcel-project-template/01-gallery.8f9118cb.js.map
+//# sourceMappingURL=/goit-js-hw-08/01-gallery.8f9118cb.js.map
